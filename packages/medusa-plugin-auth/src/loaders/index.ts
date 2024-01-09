@@ -8,6 +8,7 @@ import LinkedinStrategy from '../auth-strategies/linkedin';
 import FireaseStrategy from '../auth-strategies/firebase';
 import Auth0Strategy from '../auth-strategies/auth0';
 import AzureStrategy from '../auth-strategies/azure-oidc';
+import AppleStrategy from '../auth-strategies/apple';
 
 export default async function authStrategiesLoader(
 	container: MedusaContainer,
@@ -29,6 +30,9 @@ async function handleStrategyLoading(opt: AuthOptionsWrapper, configModule: Conf
 			break;
 		case 'google':
 			GoogleStrategy.load(container, configModule, option);
+			break;
+		case 'apple':
+			AppleStrategy.load(container, configModule, option);
 			break;
 		case 'facebook':
 			FacebookStrategy.load(container, configModule, option);

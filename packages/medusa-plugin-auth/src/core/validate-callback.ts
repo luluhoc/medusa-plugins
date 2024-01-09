@@ -98,6 +98,7 @@ export async function validateStoreCallback<
 		strict?: AuthProvider['strict'];
 	}
 ): Promise<{ id: string } | never> {
+	console.log(profile);
 	const manager: EntityManager = container.resolve('manager');
 	const customerService: CustomerService = container.resolve('customerService');
 

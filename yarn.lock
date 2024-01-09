@@ -5133,6 +5133,14 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
+"@types/passport-apple@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@types/passport-apple/-/passport-apple-2.0.3.tgz#64ae94aad4596587e3b3ff43c7af842a2843d4f2"
+  integrity sha512-XncceSuR57+/tz3PmjDG3Tm6+mW7qTYxbILnNRo6Wu5wIZ60Yvlp/LYR6GAMWhWcGtdkXDSAzAYmuBD+duve2Q==
+  dependencies:
+    "@types/express" "*"
+    "@types/passport-oauth2" "*"
+
 "@types/passport-auth0@^1.0.9":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@types/passport-auth0/-/passport-auth0-1.0.9.tgz#989f3fc84d5300f16a8bc61b4a4c4e055a3ed2ca"
@@ -15054,6 +15062,14 @@ pascal-case@^3.1.2:
   dependencies:
     no-case "^3.0.4"
     tslib "^2.0.3"
+
+passport-apple@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/passport-apple/-/passport-apple-2.0.2.tgz#a9238d09da120a0ee43c2745232d43a81e6b6469"
+  integrity sha512-JRXomYvirWeIq11pa/SwhXXxekFWoukMcQu45BDl3Kw5WobtWF0iw99vpkBwPEpdaou0DDSq4udxR34T6eZkdw==
+  dependencies:
+    jsonwebtoken "^9.0.0"
+    passport-oauth2 "^1.6.1"
 
 passport-auth0@^1.4.3:
   version "1.4.3"

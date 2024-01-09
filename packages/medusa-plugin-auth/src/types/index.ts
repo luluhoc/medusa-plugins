@@ -7,6 +7,7 @@ import { LinkedinAuthOptions } from '../auth-strategies/linkedin';
 import { Auth0Options } from '../auth-strategies/auth0';
 import { OAuth2AuthOptions } from '../auth-strategies/oauth2';
 import { AzureAuthOptions } from '../auth-strategies/azure-oidc';
+import { AppleAuthOptions } from '../auth-strategies/apple/types';
 
 export * from './strategy';
 
@@ -35,7 +36,8 @@ export type ProviderOptions =
 	| FirebaseAuthOptions
 	| Auth0Options
 	| AzureAuthOptions
-	| OAuth2AuthOptions;
+	| OAuth2AuthOptions
+	| AppleAuthOptions;
 
 export type StrategyErrorIdentifierType = ProviderOptions['type'];
 
